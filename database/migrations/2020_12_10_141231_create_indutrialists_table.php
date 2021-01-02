@@ -16,12 +16,13 @@ class CreateIndutrialistsTable extends Migration
         Schema::create('indutrialists', function (Blueprint $table) {
             
             $table->String('Photo');
-            $table->String('CompanyPersonalEmailID');
-            $table->String('NameWithInitials');
+            $table->String('CompanyPersonalEmailID')->unique();
+            $table->Text('NameWithInitials');
             $table->String('Designation');
-            $table->String('LinkedIn');
+            $table->String('LinkedIn')->unique();
             $table->String('FieldOfInterests');
-            $table->String('ContactNumber');
+            $table->Integer('ContactNumber');
+            $table->String('CompanyName');
             $table->timestamps();
         });
     }

@@ -20,8 +20,9 @@ class Industrialist extends Model
             'LinkedIn',
             'FieldOfInterests',
             'ContactNumber',
-            'UserName',
+            'CompanyName',
             'password',
+
     ];
 
     protected $hidden = [

@@ -20,19 +20,3 @@ Route::get('/', function () {
 });
 Route::resource('users', UserController::class);
 
-/*Route::get('/in',[StudentController::class, 'index']);
-Route::get('/cr',[StudentController::class, 'create']);
-Route::post('/store',[StudentController::class, 'store']);
-Route::get('/sh',[StudentController::class, 'show']);
-Route::get('/edit',[StudentController::class, 'edit']);
-*/
-
-
-/**Route::get('/in',[UserController::class, 'index']);
-Route::get('/cr',[UserController::class, 'create']);
-//Route::get('/store',[UserController::class, 'store']);
-Route::post('/store',[UserController::class, 'store']);
-Route::get('/sh',[UserController::class, 'show']);
-Route::get('/edit',[UserController::class, 'edit']);
-*/
-
